@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:dairy_hut/widgets/categoriesWidget.dart';
+import 'package:dairy_hut/widgets/ItemsWidget.dart';
 class HomePage extends StatelessWidget {
   const HomePage({super.key});
 
@@ -9,10 +10,10 @@ class HomePage extends StatelessWidget {
       body: ListView(
         children: [
           Container(
-            height: 500,
+            height: 100000,
             padding: EdgeInsets.only(top: 15),
             decoration: BoxDecoration(
-              color: Colors.white,
+              color: Colors.grey[200],
               borderRadius: BorderRadius.only(
                 topLeft: Radius.circular(35),
                 topRight: Radius.circular(35)
@@ -25,7 +26,7 @@ class HomePage extends StatelessWidget {
                   padding: EdgeInsets.symmetric(horizontal: 15),
                   height: 50,
                   decoration: BoxDecoration(
-                    color: Colors.grey[200],
+                    color: Colors.white,
                     borderRadius: BorderRadius.circular(30),
                   ),
                   child: Row(
@@ -69,6 +70,8 @@ class HomePage extends StatelessWidget {
                   ),
                 ),
                 ItemsWidget(),
+
+
               ],
             ),
           ),
