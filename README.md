@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # dairy_hut
 
 A new Flutter project.
