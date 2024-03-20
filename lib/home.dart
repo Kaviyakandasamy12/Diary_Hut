@@ -10,14 +10,14 @@ class HomePage extends StatelessWidget {
       body: ListView(
         children: [
           Container(
-            height: 100000,
+            height: 5000,
             padding: EdgeInsets.only(top: 15),
             decoration: BoxDecoration(
-              color: Colors.grey[200],
-              borderRadius: BorderRadius.only(
-                topLeft: Radius.circular(35),
-                topRight: Radius.circular(35)
-              )
+                color: Colors.grey[200],
+                borderRadius: BorderRadius.only(
+                    topLeft: Radius.circular(35),
+                    topRight: Radius.circular(35)
+                )
             ),
             child: Column(
               children: [
@@ -49,10 +49,10 @@ class HomePage extends StatelessWidget {
                   alignment: Alignment.centerLeft,
                   margin: EdgeInsets.symmetric(vertical: 20,horizontal: 10),
                   child: Text("Categories",
-                  style: TextStyle(
-                    fontSize: 25,
-                    fontWeight: FontWeight.bold,
-                  ),
+                    style: TextStyle(
+                      fontSize: 25,
+                      fontWeight: FontWeight.bold,
+                    ),
                   ),
                 ),
 
