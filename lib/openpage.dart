@@ -53,14 +53,12 @@ class Openpage extends StatelessWidget {
                     onPressed: (){
                       Navigator.push(context, MaterialPageRoute(builder: (context)=> LoginPage()));
                     },
+                    color: Colors.blue,
                     shape: RoundedRectangleBorder(
-                      side: BorderSide(
-                        color: Colors.black,
-                      ),
                       borderRadius: BorderRadius.circular(50),
                     ),
                     child: Text(
-                      "Login",
+                      "Get Started",
                       style: TextStyle(
                         fontWeight: FontWeight.w600,
                         fontSize: 18,
@@ -68,26 +66,6 @@ class Openpage extends StatelessWidget {
                     ),
                   ),
                   SizedBox(height: 20,),
-                  MaterialButton(
-                    minWidth: double.infinity,
-                    height: 60,
-                    onPressed: (){
-                      Navigator.push(context, MaterialPageRoute(builder: (context)=>SignupPage()));
-                    },
-                    color: Colors.blue,
-                    shape: RoundedRectangleBorder(
-                      borderRadius: BorderRadius.circular(50)
-                    ),
-                    child: Text(
-                      "SignUp",
-                      style: TextStyle(
-                        color: Colors.white,
-                        fontWeight: FontWeight.w600,
-                        fontSize: 18,
-
-                      ),
-                    ),
-                  ),
                 ],
               )
             ],

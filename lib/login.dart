@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:dairy_hut/navigation_bar.dart';
+import 'package:dairy_hut/signup.dart';
+import 'package:dairy_hut/forgetpassword.dart';
 class LoginPage extends StatefulWidget {
   const LoginPage({super.key});
 
@@ -77,17 +79,48 @@ class _LoginPageState extends State<LoginPage> {
                        ),
                      ),
                    ),),
+                Padding(
+                  padding: EdgeInsets.symmetric(horizontal: 40),
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.end,
+                    children: <Widget>[
+                      TextButton(
+                        onPressed: () {
+                          Navigator.push(context, MaterialPageRoute(builder: (context)=> ForgetPasswordPage()));
+                        },
+                        child: Text(
+                          "Forget Password?",
+                          style: TextStyle(
+                            color: Colors.blue,
+                            fontWeight: FontWeight.w600,
+                            fontSize: 16,
+                          ),
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
 
                 Row(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: <Widget>[
                     Text("Don't have an account?"),
-                    Text("SignUp", style: TextStyle(
-                      fontWeight: FontWeight.w600,
-                      fontSize: 18,
-                    ),)
+                    TextButton(
+                      onPressed: () {
+                        Navigator.push(context, MaterialPageRoute(builder: (context)=> SignupPage()));
+                      },
+                      child: Text(
+                        "SignUp",
+                        style: TextStyle(
+                          fontWeight: FontWeight.w600,
+                          fontSize: 18,
+                          color: Colors.blue,
+                        ),
+                      ),
+                    ),
                   ],
                 ),
+
                 Container(
                   padding: EdgeInsets.only(top: 100),
                   height: 200,

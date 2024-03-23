@@ -10,6 +10,7 @@ class HomePage extends StatefulWidget {
 }
 
 class _HomePageState extends State<HomePage> {
+  String c_id = '';
   String gheeQuantity = '1L';
   String pannerQuantity ='200g';
   String butter_Quantity = '100g';
@@ -73,6 +74,7 @@ class _HomePageState extends State<HomePage> {
                   child: Row(
                     children: [
                       Container(
+                         
                         margin: EdgeInsets.symmetric(horizontal: 10),
                         padding: EdgeInsets.symmetric(vertical: 1, horizontal: 15),
                         decoration: BoxDecoration(
